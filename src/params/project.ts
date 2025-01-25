@@ -1,0 +1,1 @@
+export const match = (name: string): boolean => /buns|ass/.test(name);
