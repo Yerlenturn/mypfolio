@@ -8,6 +8,12 @@ declare global {
             ctx: ExecutionContext
         }
     }
+
+    namespace svelteHTML {
+        interface HTMLAttributes<T> {
+            'onoutclick'?: () => void;
+        }
+    }
 }
 
 export {};

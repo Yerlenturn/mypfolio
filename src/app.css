@@ -1,3 +1,23 @@
 /* @import 'tailwindcss/base'; */
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+:root {
+  /* Light theme defaults */
+  /* --bg-color: #f2eee2; */
+  --text-color: #FFFFFF;
+  /* Add other variables... */
+}
+
+[data-theme="dark"] {
+  --bg-color: #000000;
+  --text-color: #f2f3f6;
+  /* Dark theme overrides */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+}
