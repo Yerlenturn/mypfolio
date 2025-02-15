@@ -6,8 +6,9 @@
 
 <div class="grid">
   <div class="contain">
-    <header class="fixed pb-11 superz"><Nav/></header>
-    <div class=" px-28">
+    <header class="fixed superz"><Nav/></header>
+    <div class="h-24"></div>
+    <div class=" px-28 h-32">
       <TitleBar title="OPEN  TO  WORK"/>
     </div>
   </div>

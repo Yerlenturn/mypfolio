@@ -9,7 +9,7 @@
   onMount(() => visible = true);
 </script>
 
-<div class="flex flex-row justify-between nuts text-[30px] md:text-[60px] lg:text-[80px] w-full mt-48">
+<div class="flex flex-row justify-between nuts text-[30px] md:text-[60px] lg:text-[80px] w-full">
 {#each title as letter, i}
   {#if visible}
     <span
@@ -29,11 +29,8 @@
 
 <style>
   .nuts {
-    z-index: 2222220;
     font-weight: 900;
     animation: move linear both;
-    animation-timeline: view(y);
-    animation-range: 0% 100%;
   }
 
   @keyframes move {
