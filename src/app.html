@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="icon" href="%sveltekit.assets%/lemon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<script>
 			// Critical theme detection (runs before rendering)
@@ -89,7 +89,7 @@ const render = debounce(renderThis, renderDelay)
 function init() {
   source = document.querySelector("script[type='x-shader/x-fragment']")
 
-  document.title = "🎢"
+  document.title = "✨ ORION 🪸"
 
   renderer = new Renderer(canvas, dpr)
   pointers = new PointerHandler(canvas, dpr)
@@ -523,8 +523,11 @@ class Editor {
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-		<canvas id="canvas"></canvas>
+		<div style="display: contents">
+      <canvas id="canvas"></canvas>
+      %sveltekit.body%
+    </div>
+		
 <textarea id="codeEditor" class="editor" style="display: none;" spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" oninput="render()"></textarea>
 <pre id="error" style="display: none;"></pre>
 <div id="indicator" style="display: none;"></div>
