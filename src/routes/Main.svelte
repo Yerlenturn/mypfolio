@@ -33,7 +33,7 @@
       <GridCard></GridCard>
       <GridCard></GridCard>
     </Grid>
-    <div class="flex h-screen items-center justify-center">
+    <div class="flex items-center justify-center h-[30vh]">
       {#each lc as i}
         <LinkCard title={i.title} link={i.link} icon={i.logo} color={i.color}/>
       {/each}
